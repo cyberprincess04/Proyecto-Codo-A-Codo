@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+.contenedor{
+    font-family: Farro;
+    width: 90%;
+    max-width: 1200px; /*ancho maximo de la página*/
+    margin: 10px auto; /*auto permite centrar nuestra página en forma horizontal*/
+    display: grid;
+    gap: 10px; /*nos ahorramos tenes que poner márgenes entre los elementos*/
+    text-align: center;
+    /*3 columnas*/
+    grid-template-columns: repeat(3,1fr);
+
+    /*4 filas: header, 2 de contenido, footer*/
+    grid-template-rows: repeat(4, auto);
+
+    grid-template-areas: "encabezado encabezado encabezado"
+                         "titulo titulo titulo"
+                         "contenido contenido contenido"
+                         "pie pie pie";
+}
+
+  
+
+.contenedor .encabezado{
+    background-color: #6c2601;
+    color: #FFEFCF;
+    gap: 10px;
+    grid-area: encabezado; 
+}
+
+.contenedor .titulo{
+    grid-area: titulo;
+
+        
+}
+
+.contenedor .contenido{
+    
+    display: grid;
+    justify-content: space-between;
+    gap: 10px;
+    grid-template-columns: repeat(3,1fr);
+    grid-area: contenido; 
+}
+
+
+
+.articulo{
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #f3f3f3;
+
+        
+  }
+
+  .articulo:hover {
+    background-color: #a8a7a7;
+    color: white;
+}
+
+
+  .articulo img{
+    max-width: 200px;
+    margin: 12px;
+    border-radius: 8px;
+      
+  }
+
+  .articulo h3{
+    font-size: 0.9em;
+    text-align: center;
+   
+  }
+  .articulo p{
+    padding: 0px 12px;
+    margin: 0px 12px;
+    font-size: 0.8em;
+    font-weight: lighter;
+    text-align: center;
+   
+  }
+.contenedor .pie{
+    background: #6c2601 ;
+    grid-area: pie; 
+    color: #FFEFCF;
+    
+}
+
+@media screen and (max-width: 900px){
+    .contenedor .contenido{
+        grid-template-columns: repeat(2,1fr);
+        grid-area: contenido; 
+    }
+
+    .contenedor{
+        /*2 columnas*/
+        grid-template-columns: repeat(2,1fr);
+
+        /*4 filas: header, titulo, contenido, footer*/
+        grid-template-rows: repeat(4, auto);
+
+        grid-template-areas:  "encabezado encabezado"
+                              "titulo titulo"
+                              "contenido contenido"
+                              "pie pie";
+    }
+
+
+}
+
+@media screen and (max-width: 600px){
+    .contenedor .contenido{
+        grid-template-columns: repeat(1,300px);
+        justify-content: center;
+        grid-area: contenido; 
+    }
+
+    .contenedor{
+        /*1 columnas*/
+        grid-template-columns: repeat(1,1fr);
+
+        /*4 filas: header, titulo, contenido, footer*/
+        grid-template-rows: repeat(4, auto);
+
+        grid-template-areas:  "encabezado"
+                              "titulo"
+                              "contenido"
+                              "pie";
+    }
+
+}
