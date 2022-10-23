@@ -23,6 +23,7 @@
 
 body {
   padding: 90px 20px 0;
+  font-family: Farro;
 }
 
 .header {
@@ -58,7 +59,6 @@ body {
 .logo {
   font-size: 2em;
   width: max-content;
-  font-weight: lighter;
   padding: 0 50px;
   display: flex;
   line-height: 60px;
@@ -127,6 +127,63 @@ body {
     font-size: 25px;
     padding: 0 20px;
     line-height: 60px;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background-color: var(--naranjaclaro);
+    position: fixed;
+    top: 60px;
+    width: 100%;
+    padding: 20px 0;
+
+    height: calc(100% - 60px);
+    overflow-y: auto;
+
+    left: 100%;
+    transition: left 0.3s;
+  }
+
+  .nav-menu-item {
+    line-height: 70px;
+  }
+
+  .nav-menu-link:hover,
+  .nav-menu-link_active {
+    background: none;
+    color: var(--marronoscuro);
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-menu_visible {
+    left: 0;
+  }
+
+  .nav-toggle:focus:not(:focus-visible) {
+    outline: none;
+
+  }
+}
+
+/* TABLETAS */
+@media (min-width: 768px) and (max-width: 1200px) {
+  body {
+    padding: 90px 20px 0;
+  }
+
+  .header {
+    height: 80px;
+  }
+
+  .logo {
+    font-size: 25px;
+    padding: 0 20px;
+    line-height: 80px;
   }
 
   .nav-menu {
