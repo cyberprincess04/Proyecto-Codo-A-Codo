@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="velas, sahumerios, budas, difusores, elefantes, cuadros">
+    <meta name="description" content="Tienda de velas y sahumerios">
+    <meta name="author" content="Lucia, Paula, Vaina">
+
+    <link rel="shortcut icon" href="/imagenes/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/estilosIndex.css" />
+    <link rel="stylesheet" href="css/form.css">
+    <script defer src="js/main.js"></script>
+
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Etiqueta para iconos de google -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Farro:wght@300;500&family=Poppins:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Ritual - Store</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="nav">
+
+            <div class="img">
+                <a href="#" class="logo nav-link">
+                    <img src="imagenes/favicon.png" class="logo nav-logo" alt="logo">
+                    Ritual - Velas y mas...
+                </a>
+            </div>
+
+            <button class="nav-toggle" aria-label="Abrir menú">
+                <span class="material-symbols-outlined">
+                    temp_preferences_custom
+                </span>
+            </button>
+
+            <ul class="nav-menu">
+                <li class="nav-menu-item">
+                    <a href="index.html" class="nav-menu-link nav-link">Productos</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="giftbox.html" class="nav-menu-link nav-link">Gift Boxs</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="pedidos.html" class="nav-menu-link nav-link">Pedidos</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="contacto.html" class="nav-menu-link nav-link nav-menu-link_active">Contacto</a>
+                </li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+
+
+
+    <!--cuerpo de la pagina-->
+
+    <main class="main">
+        <div class="contenedor-form">
+            <h1 id="title"> Formulario de Pedidos </h1>
+
+            <form action="submit">
+                <div class="contenedor-pedidos">
+
+                    <div class="formulario-pedidos">
+                        <h3>Tus datos:</h3>
+
+                        <p> <label for="fullname">
+                                <input type="text" name="fullname" id="fullname" placeholder="Nombre y Apellido:"
+                                    required>
+                            </label> </p>
+
+                        <p> <label for="Email">
+                                <input type="text" name="Email" id="Email" placeholder="Email:" required>
+                            </label> </p>
+
+                        <p> <label for="Telefono">
+                                <input type="tel" name="Telefono" id="Telefono" placeholder="Telefono:" required>
+                            </label> </p>
+
+                        <p> <label for="envio"> ¿Requiere envio?
+                                <input type="radio" name="radio" id="envio" value="si" checked> Si
+                                <input type="radio" name="radio" id="envio" value="no"> No
+                            </label> </p>
+
+                    </div>
+                    <hr>
+                    <div class="formulario-pedidos">
+                        <h3>Datos de envio:</h3>
+
+                        <p> <label for="Provincia">
+                                <input type="text" name="Provincia" id="Provincia" placeholder="Provincia:" required>
+                            </label> </p>
+
+                        <p> <label for="Localidad"> 
+                                <input type="text" name="Localidad" id="Localidad" placeholder="Localidad" required>
+                            </label> </p>
+
+                        <p> <label for="Ciudad"> 
+                                <input type="text" name="Ciudad" id="Ciudad" placeholder="Ciudad" required>
+                            </label> </p>
+
+                        <p> <label for="Dirección"> 
+                                <input type="text" name="Dirección" id="Dirección" placeholder="Dirección" required>
+                            </label> </p>
+
+
+                    </div>
+                    <hr>
+                    <div class="formulario-pedidos">
+                        <h3> El pedido es de: </h3>
+
+                        <p> <label for="Boxs"> 
+                            Gift Boxs: <input type="checkbox" name="Boxs" id="Boxs" value="Gift Boxs">
+                            Productos: <input type="checkbox" name="Productos" id="Boxs" value="Productos">
+                            </label> </p>
+                    </div>
+                    <input type="submit" value="Enviar" id="boton">
+                    <hr>
+                    <div class="formulario-info">
+                        <h3>¿Como hago un pedido?</h3>
+                        <p id="description">
+                            Complete los campos con los datos requeridos
+                            para hacer su pedido y nos comunicaremos con
+                            usted para finalizar la compra. Muchas gracias.
+                        </p>
+
+                        <p>Para mas infomación contacte con nosotros. <a href="contacto.html"> Ritual </a></p>
+
+                    </div>
+
+                    
+                </div>
+
+        </div>
+    </main>
+
+
+
+    <footer>
+        <!--pie de página-->
+        <div class="contenedorf">
+            <p class="copy"> Ritual &copy; 2022</p>
+            <div class="sociales">
+                <a class="icon-whatsapp"
+                    href="https://wa.me/5493415830784/?text=Hola, quiero saber mas sobre tus productos"></a>
+                <a class="icon-mail" href="mailto:paulasfregola@gmail.com?subject=Información sobre productos"></a>
+                <a class="icon-instagram" href="https://www.instagram.com/vibraritual/"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
