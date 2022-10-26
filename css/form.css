@@ -75,6 +75,21 @@ button {
     margin: auto;
 }
 
-h3, h1 {
+hr {
+    border: 1px solid blanchedalmond;
+    background-color: rgb(244, 184, 124);
+}
+
+h3, h1, hr {
+    margin: 10px;
     text-align: center;
+}
+
+.estilo {
+    color: black;
+    text-decoration:underline;
+}
+
+#description {
+    padding: 10px;
 }
